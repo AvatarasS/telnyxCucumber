@@ -10,6 +10,7 @@ export default defineConfig({
     viewportWidth: 1920,
     viewportHeight: 1080,
     pageLoadTimeout: 100000,
+    video: false,
     specPattern: "cypress/e2e/*.feature",
     async setupNodeEvents(
       on: Cypress.PluginEvents,

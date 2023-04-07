@@ -1,4 +1,4 @@
-Feature: ID_001 Test the correct video playing at the bottom of Main page
+Feature: Telnyx website testing
 
   Background:
     Given I visited Telnyx Main page
@@ -127,7 +127,7 @@ Feature: ID_001 Test the correct video playing at the bottom of Main page
     Then I should see 'Purchase or port SMS numbers' with correct inner text
     And I should see correct 'Purchase or port SMS numbers' Video
 
-  Scenario: ID_015 Test the 'Complete registration' tab on SMS API page at 'How It Works' block is revealed after click with correct inner text and video
+  Scenario: ID_015 Test that the 'Complete registration' tab after click is revealed with correct inner text and video on SMS API page at 'How It Works' block
     When I click on the Products button at header
     And I click on the 'SMS API' button
     And I scroll to How It Works block

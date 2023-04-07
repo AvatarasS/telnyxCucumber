@@ -17,6 +17,7 @@
   },
   "scripts": {
     "gui": "npx cypress open",
-    "headlessChrome": "cypress run --browser chrome"
+    "headlessChrome": "cypress run --browser chrome",
+    "headedNoExit": "cypress run --headed --no-exit"
   }
 }

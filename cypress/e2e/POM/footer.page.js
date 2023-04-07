@@ -27,34 +27,6 @@ class FooterPage {
         })
     }
 
-    clickPrivacyPolicyButton(){
-        this.footerButtons.eq(0).find('a').eq(2).click()
-        cy.fixture('testData.json').then((testData) => {
-            cy.url().should('eq', testData.pageUrl.privacyPolicy)
-        })
-    }
-
-    clickCookiePolicyButton(){
-        this.footerButtons.eq(0).find('a').eq(3).click()
-        cy.fixture('testData.json').then((testData) => {
-            cy.url().should('eq', testData.pageUrl.cookiePolicy)
-        })
-    }
-
-    clickLawEnforcementButton(){
-        this.footerButtons.eq(0).find('a').eq(4).click()
-        cy.fixture('testData.json').then((testData) => {
-            cy.url().should('eq', testData.pageUrl.lawEnforcement)
-        })
-    }
-
-    clickAcceptableUseButton(){
-        this.footerButtons.eq(0).find('a').eq(5).click()
-        cy.fixture('testData.json').then((testData) => {
-            cy.url().should('eq', testData.pageUrl.acceptableUse)
-        })
-    }
-
     clickWebsiteTermsButton(){
         this.footerButtons.eq(1).find('a').eq(0).click()
         cy.fixture('testData.json').then((testData) => {

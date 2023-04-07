@@ -4,10 +4,6 @@
     "pageUrl": {
       "dataPrivacy": "https://telnyx.com/company/data-privacy",
       "reportAbuse": "https://telnyx.com/report-abuse",
-      "privacyPolicy": "https://telnyx.com/privacy-policy",
-      "cookiePolicy": "https://telnyx.com/cookie-policy",
-      "lawEnforcement": "https://telnyx.com/law-enforcement-request",
-      "acceptableUse": "https://telnyx.com/acceptable-use-policy",
       "websiteTerms": "https://telnyx.com/terms-and-conditions",
       "releaseNotes": "https://telnyx.com/release-notes"
     },

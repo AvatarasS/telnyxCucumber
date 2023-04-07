@@ -3,6 +3,7 @@
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
     "@esbuild-plugins/node-modules-polyfill": "^0.2.2",
     "cypress": "^12.9.0",
+    "gh-pages": "^5.0.0",
     "typescript": "^5.0.3"
   },
   "dependencies": {
@@ -13,7 +14,11 @@
     "stepDefinitions": "cypress/e2e/*.{js,ts}"
   },
   "compilerOptions": {
-      "types": ["cypress", "node", "cypress-real-events"]
+    "types": [
+      "cypress",
+      "node",
+      "cypress-real-events"
+    ]
   },
   "scripts": {
     "gui": "npx cypress open",

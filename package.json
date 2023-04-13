@@ -2,6 +2,7 @@
   "devDependencies": {
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
     "@esbuild-plugins/node-modules-polyfill": "^0.2.2",
+    "@rollup/plugin-inject": "^5.0.3",
     "cypress": "^12.9.0",
     "cypress-multi-reporters": "^1.6.3",
     "gh-pages": "^5.0.0",
@@ -12,6 +13,7 @@
   },
   "dependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^16.0.2",
+    "@jridgewell/sourcemap-codec": "^1.4.15",
     "cypress-real-events": "^1.7.6"
   },
   "cypress-cucumber-preprocessor": {

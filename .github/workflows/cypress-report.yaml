@@ -5,10 +5,10 @@ on:
       - 'master'
 jobs:
   cypress-e2e-chrome:
-  name: Run on Chrome
-  runs-on: ubuntu-latest
-  container: cypress/browsers:node-18.15.0-chrome-111.0.5563.146-1-ff-111.0.1-edge-111.0.1661.62-1
-  steps:
+    name: Run on Chrome
+    runs-on: ubuntu-latest
+    container: cypress/browsers:node-18.15.0-chrome-111.0.5563.146-1-ff-111.0.1-edge-111.0.1661.62-1
+    steps:
     - uses: actions/checkout@v3
     - name: Install a project with a clean slate
       run: |

@@ -5,12 +5,15 @@ import { addCucumberPreprocessorPlugin } from "@badeball/cypress-cucumber-prepro
 import createEsbuildPlugin from "@badeball/cypress-cucumber-preprocessor/esbuild";
 
 export default defineConfig({
+  reporter: 'cypress-multi-reporters',
+  reporterOptions: {
+    mochaFile: 'reporter-config.json'
+  },
   e2e: {
     chromeWebSecurity: false,
     viewportWidth: 1920,
     viewportHeight: 1080,
     pageLoadTimeout: 100000,
-    video: false,
     specPattern: "cypress/e2e/*.feature",
     async setupNodeEvents(
       on: Cypress.PluginEvents,

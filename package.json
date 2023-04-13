@@ -3,7 +3,11 @@
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
     "@esbuild-plugins/node-modules-polyfill": "^0.2.2",
     "cypress": "^12.9.0",
+    "cypress-multi-reporters": "^1.6.3",
     "gh-pages": "^5.0.0",
+    "mocha": "^10.2.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
     "typescript": "^5.0.3"
   },
   "dependencies": {
@@ -23,6 +27,8 @@
   "scripts": {
     "gui": "npx cypress open",
     "headlessChrome": "cypress run --browser chrome",
-    "headedNoExit": "cypress run --headed --no-exit"
+    "headedNoExit": "cypress run --headed --no-exit",
+    "report:merge": "mochawesome-merge cypress/results/json/*.json > index.json",
+    "report:generate": "marge index.json --reportDir public --assetsDir public/assets --reportPageTitle index.html"
   }
 }

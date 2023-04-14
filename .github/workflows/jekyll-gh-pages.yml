@@ -10,10 +10,6 @@ jobs:
     container: cypress/browsers:node-18.15.0-chrome-111.0.5563.146-1-ff-111.0.1-edge-111.0.1661.62-1
     steps:
     - uses: actions/checkout@v3
-    - name: Install a project with a clean slate
-      run:
-        npm install
-
     - name: Run Cypress tests
       run: npm run headlessChrome
       continue-on-error: true
@@ -21,8 +17,6 @@ jobs:
       run: |
         mkdir public
         cp -r cypress/videos public/videos
-    - name: Merge test results into one
-      run: npm run report:merge
     - name: Generate HTML report
       run: npm run report:generate
     - name: Deploy report page

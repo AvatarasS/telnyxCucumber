@@ -13,10 +13,6 @@ jobs:
     - name: Run Cypress tests
       run: npm run headlessChrome
       continue-on-error: true
-    - name: Copy test execution videos
-      run: |
-        mkdir public
-        cp -r cypress/videos public/videos
     - name: Generate HTML report
       run: npm run report:generate
     - name: Deploy report page

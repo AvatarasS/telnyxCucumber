@@ -29,10 +29,10 @@
     ]
   },
   "scripts": {
-    "gui": "npx cypress open",
-    "headlessChrome": "cypress run --browser chrome",
-    "headedNoExit": "cypress run --headed --no-exit",
-    "report:merge": "mochawesome-merge cypress/results/json/*.json > index.json",
-    "report:generate": "marge index.json --reportDir public --assetsDir public/assets --reportPageTitle index.html"
+    "cy:open": "npx cypress open",
+    "cy:run": "npx cypress run",
+    "report:merge": "mochawesome-merge > index.json",
+    "report:mocha": "marge index.json",
+    "report:clean": "rimraf mochawesome-report index.js"
   }
 }

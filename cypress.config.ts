@@ -5,9 +5,10 @@ import { addCucumberPreprocessorPlugin } from "@badeball/cypress-cucumber-prepro
 import createEsbuildPlugin from "@badeball/cypress-cucumber-preprocessor/esbuild";
 
 export default defineConfig({
+  video: false,
   reporter: 'cypress-multi-reporters',
   reporterOptions: {
-    mochaFile: 'reporter-config.json'
+    configFile: 'reporter-config.json'
   },
   e2e: {
     chromeWebSecurity: false,
